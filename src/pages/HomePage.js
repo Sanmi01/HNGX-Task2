@@ -55,7 +55,7 @@ const HomePage = () => {
     if (!Array.isArray(data.results)) return;
     const movies = data.results;
     const sortedMovies = movies
-      .slice(0, 12)
+      .slice(0, 10)
       .sort((a, b) => b.vote_average - a.vote_average);
   
   
