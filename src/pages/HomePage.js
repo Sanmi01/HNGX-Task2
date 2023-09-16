@@ -81,8 +81,9 @@ const HomePage = () => {
       <p className="text-lg font-semibold mt-6 max-w-[47ch] line-clamp-4">
         {displayHero.overview}
       </p>
+      
       <Link
-        to={{ pathname: "/movie" }}
+        to={{ pathname: `/movies/${displayHero.id}` }}
         className="text-white bg-[#be123c] py-2 px-4 rounded-md flex items-center mt-6 gap-2 max-w-[10rem]"
       >
         <svg
